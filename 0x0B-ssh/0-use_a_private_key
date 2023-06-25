@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-ssh ubuntu@52.23.178.165
+#connect to a server using a privaye key in a file
+ssh -i ~/.ssh/school ubuntu@52.23.178.165
