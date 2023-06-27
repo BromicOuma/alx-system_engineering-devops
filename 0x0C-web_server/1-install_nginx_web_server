@@ -9,10 +9,10 @@
 
 
 #installation
-sudo apt-get update
+apt update
 
 #installing nginx
-sudo apt-get install nginx -y
+apt install nginx -y
 
 #start ngix service
 # systemctl status nginx
