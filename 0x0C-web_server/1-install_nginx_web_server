@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+# Install nginx on your web-01 server
+# Nginx should be listening on port 80
+# When querying Nginx at its root / with a GET request
+# (requesting a page) using curl, it must return a
+# page that contains the string Hello World!
+# You can’t use systemctl for restarting nginx
+
+#installation
+apt-get update
+
+#installing nginx
+apt-get install nginx -y
+
+#start ngix service
+# systemctl status nginx
+#configure firewall allow nginx connect port 80
+ufw allow 'Nginx HTTP'
+
+#Add content
+echo "Hello World!" > /var/www/html/index.html
+
+#check syntax
+nginx -t
+
+#estart nginx
+nginx -s reload
