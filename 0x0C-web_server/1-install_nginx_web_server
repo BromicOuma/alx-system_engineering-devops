@@ -21,8 +21,6 @@ ufw allow 'Nginx HTTP'
 #Add content
 echo "Hello World!" > /var/www/html/index.html
 
-#check syntax
-nginx -t
-
+#check
 #estart nginx
 nginx -s reload
