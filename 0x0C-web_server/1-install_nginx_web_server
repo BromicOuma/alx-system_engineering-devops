@@ -7,13 +7,12 @@
 # page that contains the string Hello World!
 # You can’t use systemctl for restarting nginx
 
-#roo user
-sudo su
+
 #installation
-apt-get update
+sudo apt-get update
 
 #installing nginx
-apt-get install nginx -y
+sudo apt-get install nginx -y
 
 #start ngix service
 # systemctl status nginx
